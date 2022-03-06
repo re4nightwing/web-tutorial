@@ -4,38 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lorem ipsum dolor</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Web Tutorial</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <!-- navigation bar start -->
-      <div class="navbar">
-          <div class="container">
-                <a href="#" class="site-logo">L<span>O</span>G<span>O</span></a>
-                <img id="menu-btn" class="mob-menu"  src="img/bars-solid.svg" width="20px" alt="Open menu" onclick="openmenu()">
-                <nav>
-                    <img id="menu-close" class="mob-menu-close"  src="img/xmark-solid.svg" width="20px" alt="Close menu" onclick="closemenu()">
-                    <ul class="primary-nav">
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#review">Feedback</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                    <ul class="secondary-nav">
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li class="login-btn"><a href="#">Login</a></li>
-                    </ul>
-                </nav>
-          </div>
+    <div class="navbar">
+      <div class="container">
+
+        <a href="#" class="site-logo">L<span>O</span>GO</a>
+        <img id="menu-btn" class="mob-menu" src="img/bars-solid.svg" width="20px" alt="open mobile menu" onclick="openmenu()">
+
+        <nav>
+          <img id="menu-close" class="mob-menu-close" src="img/xmark-solid.svg" width="20px" alt="Close mobile menu" onclick="closemenu()">
+          <ul class="primary-nav">
+            <li class="active"><a href="#top">Home</a></li>
+            <li><a href="#features-section">Features</a></li>
+            <li><a href="#about-section">About</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#contact-section">Contact Us</a></li>
+            <li class="login-btn"><a href="#">Login</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- navigation bar end -->
-      <script>
-          const nav = document.querySelector('nav');
-          function openmenu(){
-            nav.classList.add('menu-btn');
-          }
-          function closemenu(){
-            nav.classList.remove('menu-btn');
-          }
-      </script>
+    </div>
+
+    <section class="showcase">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">Sub Heading</p>
+          <h1>Heading</h1>
+          <div class="btn-section">
+            <a href="" class="primary-link">Register Now</a>
+            <small>or</small>
+            <a href="" class="secondary-link">Login</a>
+          </div>
+        </div>
+        <img src="img/discussion.svg" class="showcase-img" alt="right side showcase image">
+      </div>
+    </section>
+
+    <section class="features" id="features-section">
+      <div class="container">
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+        </ul>
+
+        <img class="feature-img" src="img/android-4n.svg" alt="">
+
+      </div>
+    </section>
+
+    <section class="reviews" id="about-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="https://i.pinimg.com/564x/27/f8/ac/27f8ac64f105eafc911aa3f34c48eadb.jpg" alt="">
+            <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat culpa animi facere perspiciatis eligendi, soluta iusto expedita nemo. "</blockquote>
+            <cite>- John Doe</cite>
+          </li>
+          <li>
+            <img src="https://i.pinimg.com/564x/27/f8/ac/27f8ac64f105eafc911aa3f34c48eadb.jpg" alt="">
+            <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat culpa animi facere perspiciatis eligendi, soluta iusto expedita nemo. "</blockquote>
+            <cite>- John Doe</cite>
+          </li>
+          <li>
+            <img src="https://i.pinimg.com/564x/27/f8/ac/27f8ac64f105eafc911aa3f34c48eadb.jpg" alt="">
+            <blockquote>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minus fugiat culpa animi facere perspiciatis eligendi, soluta iusto expedita nemo. "</blockquote>
+            <cite>- John Doe</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+
+          <form action="" method="POST">
+            <label for="username">Name</label>
+            <input type="text" name="username" id="username">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="user-text">Message</label>
+            <textarea name="user-text" id="user-text" cols="30" rows="10"></textarea>
+            <input type="submit" name="msg-sub" value="Send Message">
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.05686092162!2d80.11481631513075!3d6.123049995566498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae177c1ba7a52db%3A0x98876249a7444812!2sBeverly%20Hill%20Cabanas%20Hikkaduwa!5e0!3m2!1sen!2slk!4v1646487883243!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Designed by <span>re4nightwing</span></p>
+    </footer>
+  <script>
+    const nav = document.querySelector('nav');
+
+    function openmenu(){
+      nav.classList.add('menu-btn');
+    }
+    function closemenu(){
+      nav.classList.remove('menu-btn');
+    }
+  </script>
   </body>
 </html>
