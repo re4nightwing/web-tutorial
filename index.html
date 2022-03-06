@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem ipsum dolor</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <!-- navigation bar start -->
+      <div class="navbar">
+          <div class="container">
+                <a href="#" class="site-logo">L<span>O</span>G<span>O</span></a>
+                <img id="menu-btn" class="mob-menu"  src="img/bars-solid.svg" width="20px" alt="Open menu" onclick="openmenu()">
+                <nav>
+                    <img id="menu-close" class="mob-menu-close"  src="img/xmark-solid.svg" width="20px" alt="Close menu" onclick="closemenu()">
+                    <ul class="primary-nav">
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#review">Feedback</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li class="login-btn"><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+          </div>
+      </div>
+      <!-- navigation bar end -->
+      <script>
+          const nav = document.querySelector('nav');
+          function openmenu(){
+            nav.classList.add('menu-btn');
+          }
+          function closemenu(){
+            nav.classList.remove('menu-btn');
+          }
+      </script>
+  </body>
+</html>
